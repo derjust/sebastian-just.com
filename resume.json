@@ -21,15 +21,40 @@
     }]
   },
   "work": [{
-    "name": "Company",
-    "position": "President",
-    "url": "https://company.com",
-    "startDate": "2013-01-01",
-    "endDate": "2014-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Started the company"
-    ]
+    "name": "Comcast",
+    "position": "Director Software Development & Engineering",
+    "url": "https://www.comcast.com",
+    "location": "Greater Philadelphia (Remote)",
+    "startDate": "2019-05-01"
+  },{
+    "name": "FIS - Professional Services Risk Insurance",
+    "position": "Process & Solution Architect",
+    "url": "https://www.fisglobal.com",
+    "location": "New York City Metropolitan Area",
+    "startDate": "2016-11-01",
+    "endDate": "2019-04-01"
+  },{
+    "name": "FIS - Professional Services Risk Insurance",
+    "position": "Manager",
+    "url": "https://www.fisglobal.com",
+    "location": "New York City Metropolitan Area",
+    "startDate": "2014-06-01",
+    "endDate": "2016-10-01",
+    "summary": "Working on north-star projects using modern and upcoming technologies in the Finance and Media industry as architect, software engineer, technical project lead and mentor.\n\nNote: FIS acquired SunGard on November 30, 2015."
+  },{
+    "name": "SunGard Financial Systems - Consulting Services",
+    "position": "Lead Senior Consultant",
+    "location": "Frankfurt Rhine-Main Metropolitan Area",
+    "startDate": "2009-12-01",
+    "endDate": "2014-05-01",
+    "summary": "Worked on process automation and service orchestration in the Finance and Energy trading industry all over Europe as software engineer, architect, subproject lead and mentor. Also was leading and responsible for the second level support hotline for SunGard's BPM suite 'Infinity Process Platform' mitigating customer's production issues and interfacing with product management."
+  },{
+    "name": "RÖPERWEISE GmbH",
+    "position": "Software Developer",
+    "location": "Hannover-Braunschweig-Göttingen-Wolfsburg Region",
+    "startDate": "2005-05-01",
+    "endDate": "2009-11-01",
+    "summary": "Worked as a software engineer improving and supporting custom developed software for customer finance products.\nMigrated and improved the customer acquisition application including field service representative planning from Microsoft Access to JSF web application. (Spring, JSF, IceFaces, Tomcat, MSSQL, Hibernate, VBA, Ant)\nThis lowered the license and maintenance cost per agent desktop in the back office by 75% and significantly improved the feature delivery time due to a modernized code base."
   }],
   "education": [{
     "institution": "Drexel University",
@@ -60,10 +85,17 @@
     "summary": "There is no spoon."
   }],
   "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
+    "name": "AWS Certified Solutions Architect – Associate",
+    "date": "2019-12-01",
+    "issuer": "Amazon Web Services (AWS)"
+  },{
+    "name": "Google Cloud Platform Developer Qualification Workshop (CP300A)",
+    "date": "2015-08-01",
+    "issuer": "ROI Training"
+  },{
+    "name": "Sun Certified Programmer for the Java 2 Platform, Standard Edition 5.0",
+    "date": "2006-04-01",
+    "issuer": "Sun Microsystems"
   }],
   "publications": [{
     "name": "Market Reconstruction 2.0: A Financial Services Application of Google Cloud Bigtable and Google Cloud Dataflow",
@@ -111,17 +143,122 @@
     ]
   }],
   "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
+    "name": "Neil Palmer",
+    "reference": "Sebastian is a hugely talented developer with a great ability to deliver large amounts of work on time and of extremely high quality. He was fantastic on both direct client projects and our internal R&D, including a key role building out the prototype for the Consolidated Audit Trail on Google Cloud Platform that was demonstrated at Google Next in 2016. He's an asset to any team, a pleasure to work with and I hope to work with him again in the future. — Neil Palmer, Global Cloud Practice Lead at Egen (January 31, 2017, Neil managed Sebastian directly)"
+  },{
+    "name": "Salvatore Sferrazza",
+    "reference": "When Sebastian first arrived as an engineering resource for a worldwide enterprise portal project that was over-scoped, understaffed and late, he was already an accomplished Java developer. Given the circumstances, we gleefully ignored that the project was entirely written in Node.js, acted casual and simply hoped for a de minimus velocity tax. Without even a speed bump, our delivery rate escalated and the project, to great relief, was delivered successfully. Sebastian's contributions were paramount, and he was able take his fundamentals, apply them to a solution space that was new to him, and ultimately give the project the boost it needed through the finish line.\n\nFast forward several years and Sebastian had scaled up his contributions and technical leadership, becoming a mentor to many team members and spearheading the engineering work for both exotic internal pursuits and large, custom application development projects. Along the way, he's helped the bigger picture through co-authoring several FinTech technical white papers, as well as contributing to various OSS projects and acting as a product engineering liaison in strategic vendor relationships, kicking the tires on some products that are exhibiting considerable impact today.\n\nSebastian's ability to think strategically and arrive at pragmatic solutions reinforces his technical background and helps his teams ship reliably. The combination means that the product is able to do so without the technical debt accumulation that progressively decays quality. His strong sense of \"right\" in terms of software and systems architectures and alignment with the project's objectives make Sebastian a particularly excellent navigator of the complex tradeoff matrices faced by many ambitious efforts.\n\nAside from his technical and business competencies, he's also just a great teammate - and firmly on the short-list of engineers I'd work with again in a heartbeat. — Salvatore Sferrazza, Hi-Tech Polymath (January 24, 2017, Salvatore was senior to Sebastian but didn't manage Sebastian directly)"
   }],
   "projects": [{
-    "name": "Project",
-    "startDate": "2019-01-01",
-    "endDate": "2021-01-01",
-    "description": "Description...",
-    "highlights": [
-      "Won award at AIHacks 2016"
-    ],
-    "url": "https://project.com/"
+    "name": "Productize implementation and delivery cloud-based insurance model calculation solution",
+    "entity": "FIS - Professional Services Risk Insurance",
+    "startDate": "2018-02-01",
+    "description": "Derive a productized version of previous solutions and domain knowledge in the market for life insurance risk calculations fulfilling U.S. GAAP & IFRS17 regulatory requirements.\n\nProduct provides standardized workflows for the whole input/calculation/output chain of life insurance risk calculations covering multiple automated tools, human interactions & approvals. Lead developer and architect in a team of 4 people.\n\nProductized solution based on fully audited, message-driven, polyglottal, Spring-based integration & workflow solution and the Prophet insurance product suite. It allows to perform the input/calculation/output chain with zero human interaction bridging 5+ systems, languages and protocols. Human interaction is focused on review & approval only.",
+    "keywords": [
+      "Java", "C#", "Drools", "HTML5", "REST", "SQL",
+      "Tomcat 8.5", "MSSQL 2016", "AWS", "Apache ActiveMQ & NMS",
+      "Maven", "Bitbucket", "Jenkins"
+    ]
+  },{
+    "name": "spring-data-dynamodb – AWS DynamoDB connector for Spring",
+    "url": "https://github.com/derjust/spring-data-dynamodb",
+    "startDate": "2015-08-01",
+    "description": "Project lead for 4+ years.",
+    "roles": ["Project lead"]
+  },{
+    "name": "Designed, implemented and delivered cloud-based insurance model calculation solution",
+    "entity": "FIS - Professional Services Risk Insurance",
+    "startDate": "2017-02-01",
+    "endDate": "2018-03-01",
+    "description": "Delivered a solution for a fully audited insurance calculation workflow. Integrates with existing workflows and system/file structures at the customer side receiving its input data from and providing the output results back. Lead developer and architect in a team of 6 people.\n\nImproving business transaction throughput by two magnitudes to 100 per minute allowing the business to answer regulatory and management requirements faster while providing a fully audited workflow based on a message-driven, polyglottal, Spring-based integration & workflow solution and the Prophet insurance product suite.",
+    "keywords": [
+      "Java", "C#", "Dozer", "HTML5", "REST", "SQL",
+      "JBoss EAP 6", "MSSQL 2014", "AWS", "Apache ActiveMQ & NMS",
+      "Maven", "Bitbucket", "Jenkins"
+    ]
+  },{
+    "name": "Designed, implemented and delivered cloud-based insurance model calculation PoC",
+    "entity": "FIS - Professional Services Risk Insurance",
+    "startDate": "2016-11-01",
+    "endDate": "2017-02-01",
+    "description": "Delivered a proof of concept (PoC) solution for a fully audited insurance calculation workflow. PoC integrates with existing workflow tools at the customer side receiving its input data from and providing the output results back from the cloud solution into the customer's on-premise infrastructure. Lead developer and architect in a team of 4 people.\n\nProving a projected 2/3 decrease in TCO of the whole solution by leveraging AWS cloud services. Showcasing a simplified file protocol between the existing IT landscape and the new cloud-based solution minimizing the impact on infrastructure and security concerns.",
+    "keywords": [
+      "Java", "Dozer", "HTML5",
+      "Prophet insurance product suite", "Towers Watson Unify",
+      "JBoss EAP 6", "MSSQL 2014", "AWS"
+    ]
+  },{
+    "name": "Designed, implemented, tested and delivered video asset downloader for iOS clients",
+    "entity": "FIS - Advanced Technology",
+    "startDate": "2016-03-01",
+    "endDate": "2016-10-01",
+    "description": "Lead developer and architect in a team of 4 people to significantly improve the user experience of downloading video assets to user's mobile device.\n\nResponsible for technical direction, backend development, unit testing with comprehensive test coverage and deployment of a ZIP HTTP REST download that reduces the download time of video assets from 40 minutes to under 3 minutes (2h movie) including seamless HTTP resume.",
+    "keywords": [
+      "Scala", "Spray", "Akka-Streams", "Akka-HTTP",
+      "Java", "open-m3u8",
+      "Memcached", "OpenStack", "Consul", "Docker",
+      "Akamai GTM", "Terraform", "Ansible", "Pagerduty",
+      "sbt", "Concourse", "Github Enterprise", "Cobertura", "jVisualVM", "JMH"
+    ]
+  },{
+    "name": "Open M3U8",
+    "url": "https://github.com/derjust/open-m3u8",
+    "startDate": "2014-10-01",
+    "endDate": "2016-09-01",
+    "description": "Open M3U8 is an MIT licensed m3u8 playlist parser and writer library written in java."
+  },{
+    "name": "Planned, implemented and load tested a prototype based on Google Cloud",
+    "entity": "FIS - Advanced Technology",
+    "url": "https://youtu.be/fqOpaCS117Q?t=39m55s",
+    "startDate": "2015-12-01",
+    "endDate": "2016-03-01",
+    "description": "Lead developer and architect in a team of 4 people for a prototype which is able to durably ingest, validate and link 25 billion market events in under 1 hour on the Google Cloud Platform to fulfill SEC's SLA requirements.\n\nResponsible for technical and functional direction, development, unit and performance testing with comprehensive test coverage and deployment of the solution on GCP. Results were presented on GCP Next 16 - https://youtu.be/fqOpaCS117Q?t=39m55s - and summarized in the whitepaper 'Market Reconstruction 2.0'.",
+    "keywords": [
+      "Google Bigtable", "Google Dataflow", "Google BigQuery", "Apache HBase", "Apache Hadoop",
+      "Google Cloud Computing", "Google Cloud CLI", "Google OAuth",
+      "Java", "TransFIX", "JMH",
+      "Maven", "Git", "Bash"
+    ]
+  },{
+    "name": "Implemented and delivered a treasury system for all worldwide subsidiaries",
+    "entity": "FIS - Advanced Technology",
+    "startDate": "2014-08-01",
+    "endDate": "2015-03-01",
+    "description": "Lead developer in a team of 5 people for a tailored solution for the customer's treasury and cash flow requirements.\n\nResponsible for technical direction, front- and backend development, unit testing and deployment of the solution providing performant access for 1,500 accountants of their world-wide subsidiaries including a corporate treasury division with up to 100 concurrent users.",
+    "keywords": [
+      "Node.js (Express, edge/C#, passport, i18n, superagent, multi file upload)",
+      "HTML5", "Twitter Bootstrap", "AngularJS", "CSS3", "Apache jMeter",
+      "Microsoft IIS 7", "Sharepoint 2010", "Microsoft SQL Server 2012", "Grunt"
+    ]
+  },{
+    "name": "Planning major workflow processes and service orchestration system migration",
+    "entity": "SunGard Financial Systems - Consulting Services",
+    "startDate": "2014-01-01",
+    "endDate": "2014-06-01",
+    "description": "Developed a board-approved migration path to transit the existing solution to a modern, flexible, message oriented architecture while keeping all business processes and data consistent for minimized business impact.\n\nSolution architect and project manager in a team of 4 people. Responsible for target architecture, elaboration of technologies and review of the existing implementations. Developed and reviewed proof of concept for different integrations including effort estimation and migration.\n\nBinary protocols between systems were replaced by message based, platform independent protocols allowing integration of new modules via a simplified translation layer within days compared to months of effort to integrate.",
+    "keywords": [
+      "Java (Spring, JPA, JAX-WS, XML/XSLT, JaxB, Reflection)", "Maven",
+      "HTML5", "JSP/Servlets", "JSF", "Apache MyFaces", "Apache Trinidad",
+      "Infinity Process Platform/Eclipse Stardust", "Apache Camel", "Hazelcast",
+      "Oracle Database 12g", "JBoss EAP 6.2", "HornetQ Broker", "Apache ActiveMQ Broker"
+    ]
+  },{
+    "name": "Planned, implemented and delivered Sales Portal for Energy Trading",
+    "entity": "SunGard Financial Systems - Consulting Services",
+    "startDate": "2013-06-01",
+    "endDate": "2014-02-01",
+    "description": "Lead software engineer and architect in a team of five people for a web application for deal capture by sales department, based on standardized deal characteristics and automated pricing algorithm.\n\nResponsible for further elaboration of the specification, leading technology decisions and architecture, implementation, code review, and deployment providing a streamlined sales process for the front office decreasing the offer creation by 50%.",
+    "keywords": [
+      "Spring", "JSF", "JMS", "JBoss", "JCA", "ActiveMQ", "Maven"
+    ]
+  },{
+    "name": "Implemented and delivered Energy back office trading integration with SAP",
+    "entity": "SunGard Financial Systems - Consulting Services",
+    "startDate": "2013-01-01",
+    "endDate": "2013-08-01",
+    "description": "Lead software engineer and architect in a team of two people for a CSV file based bi-directional interface between SunGard Aligne GBO and SAP.\n\nResponsible for requirements engineering, architecture implementation and delivery of the integration module.",
+    "keywords": [
+      "Spring", "JAX-*", "Tomcat", "JaxB", "Tipco", "SAP", "Maven"
+    ]
   }]
 }
