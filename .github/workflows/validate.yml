@@ -31,4 +31,17 @@ jobs:
         run: npm ci
 
       - name: Validate resume.json
-        run: npm run validate
+        run: |
+          set +e
+          output=$(npx resume validate resume.json 2>&1)
+          status=$?
+          set -e
+          echo "$output"
+          {
+            echo "### resume.json validation"
+            echo ""
+            echo '```'
+            echo "$output"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit $status
