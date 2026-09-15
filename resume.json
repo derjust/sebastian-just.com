@@ -1,0 +1,127 @@
+{
+  "basics": {
+    "name": "Sebastian Just",
+    "label": "Director, Software Development & Engineering",
+    "image": "profile.jpeg",
+    "email": "mail@sebastian-just.com",
+    "phone": "(347) 266-4396",
+    "url": "https://sebastian-just.com",
+    "summary": "Software Engineering Leader and Technology Architect with 10+ years of experience architecting large-scale, resilient systems across international finance, energy, and media enterprises. Deep technical expertise in Java, Scala, and reactive stream architectures, paired with a commitment to test-driven development and robust design principles. Proven leader in guiding cross-functional teams through the complete development lifecycle—from scoping and planning to production delivery and reliable operations.",
+    "location": {
+      "address": "211 Half-Moon-Bay Dr",
+      "postalCode": "NY 10520",
+      "city": "Croton-on-Hudson",
+      "countryCode": "US",
+      "region": "New York"
+    },
+    "profiles": [{
+      "network": "Github",
+      "username": "derjust",
+      "url": "https://github.com/derjust"
+    }]
+  },
+  "work": [{
+    "name": "Company",
+    "position": "President",
+    "url": "https://company.com",
+    "startDate": "2013-01-01",
+    "endDate": "2014-01-01",
+    "summary": "Description…",
+    "highlights": [
+      "Started the company"
+    ]
+  }],
+  "education": [{
+    "institution": "Drexel University",
+    "url": "https://drexel.edu/",
+    "area": "Software Engineering",
+    "studyType": "Master of Science",
+    "startDate": "2021-06-01",
+    "endDate": "2024-06-01"
+  },{
+    "institution": "HBX | Harvard Business School",
+    "url": "https://www.hbs.edu/",
+    "area": "Leading with Finance",
+    "studyType": "Certificate",
+    "startDate": "2017",
+    "endDate": "2017"
+  },{
+    "institution": "Leibniz Akademie Hannover",
+    "url": "https://leibniz-akademie.de/",
+    "area": "Business Computer Science",
+    "studyType": "Bachelor of Science",
+    "startDate": "2005-09-01",
+    "endDate": "2009-03-31"
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2021-11-07",
+    "issuer": "Company",
+    "url": "https://certificate.com"
+  }],
+  "publications": [{
+    "name": "Market Reconstruction 2.0: A Financial Services Application of Google Cloud Bigtable and Google Cloud Dataflow",
+    "publisher": "FIS Advanced Technology",
+    "releaseDate": "2016-08-23",
+    "url": "http://www.fisglobal.com/Solutions/Institutional-and-Wholesale/Broker-Dealer/-/media/FISGlobal/Files/Whitepaper/A-Financial-Services-Application-of-Google-Cloud-Bigtable-and-Google-Cloud-Dataflow.pdf",
+    "summary": "The FIS Market Reconstruction Platform (MRP) is a market surveillance and forensics utility designed for the daily ingestion, linkage and analytics of U.S. equity and equity options market events over multi-year periods. In May of 2015, FIS’ Advanced Technology group (formerly SunGard) released a white paper detailing its experiences using Google Cloud Bigtable in prototyping the MRP."
+  },{
+    "name": "Transforming options market data with the Dataflow SDK",
+    "publisher": "FIS Advanced Technology (formerly SunGard)",
+    "releaseDate": "2017-12-17",
+    "url": "http://bit.ly/1NzQiuo",
+    "summary": "Much of the software development in the capital markets revolves around the transformation and enrichment of data arriving from another system. Traditionally, developers have considered the activities around Extracting, Transforming and Loading (ETL) data a particularly unglamorous dimension of building software products. However, when data-driven enterprises are tasked with harvesting insights from massive data sets, it is quite likely that ETL, in one form or another, is lurking nearby."
+  },{
+    "name": "Scaling to Build the Consolidated Audit Trail",
+    "publisher": "SunGard Data Systems, Inc",
+    "releaseDate": "2015-05-06",
+    "url": "https://cloud.google.com/bigtable/pdf/ConsolidatedAuditTrail.pdf",
+    "summary": "Google Cloud Bigtable is a fully managed, high-performance, extremely scalable NoSQL database service offered through the industry-standard, open-source Apache HBase API, powered by Bigtable. The Consolidated Audit Trail (CAT) is a massive, government-mandated database that will track every equities and options market event in the US financial industry over a six-year period. We consider Google Cloud Bigtable in the context of CAT, and perform a series of experiments measuring the speed and scalability of Cloud Bigtable. We find that Google Cloud Bigtable scales well and will be able to meet the requirements of CAT. Additionally, we discuss how Google Cloud Bigtable fits into the larger full technology stack of the CAT platform."
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  },{
+    "language": "German",
+    "fluency": "Mother tongue"
+  },{
+    "language": "Dutch",
+    "fluency": "Basic"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference…"
+  }],
+  "projects": [{
+    "name": "Project",
+    "startDate": "2019-01-01",
+    "endDate": "2021-01-01",
+    "description": "Description...",
+    "highlights": [
+      "Won award at AIHacks 2016"
+    ],
+    "url": "https://project.com/"
+  }]
+}

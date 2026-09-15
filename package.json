@@ -1,0 +1,14 @@
+{
+  "name": "sebastian-just.com",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Resume site for sebastian-just.com, generated from resume.json via resume-cli",
+  "scripts": {
+    "validate": "resume validate resume.json",
+    "build": "mkdir -p public && resume export public/index.html --format html --theme macchiato"
+  },
+  "devDependencies": {
+    "jsonresume-theme-macchiato": "^1.1.0",
+    "resume-cli": "^3.7.3"
+  }
+}
