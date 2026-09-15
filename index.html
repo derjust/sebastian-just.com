@@ -1,0 +1,1102 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Sebastian Just</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>/* Utils */
+/*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+
+html {
+  background: white;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: white;
+  margin: 50px 0 100px;
+  letter-spacing: .3px;
+  color: #39424B;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .5px;
+}
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .4px;
+}
+
+h3.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+h4.bold {
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #2895F1;
+}
+
+a .fa-external-link {
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
+p,
+li {
+  font-size: 11px;
+}
+
+blockquote {
+  font-size: 11px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px;
+}
+
+em {
+  color: #999;
+}
+
+ul {
+  margin: 10px 0 0;
+  -webkit-padding-start: 25px;
+}
+
+ul li {
+  padding-left: 10px;
+}
+
+ul.minimal {
+  list-style: none;
+  padding: 0;
+}
+
+ul.minimal li {
+  margin-bottom: 3px;
+  padding-left: 0;
+}
+
+ul.two-column {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 28px;
+  column-count: 2;
+  column-gap: 28px;
+}
+
+ul.two-column li {
+  padding-left: 0;
+}
+
+@page {
+  size: A4;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.keyline {
+  width: 45px;
+  margin: 8px 0 10px;
+  border-top: 1px solid #56817A;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.profile-pic {
+  margin-top: -5px;
+  margin-right: 18px;
+}
+
+.profile-pic img {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid #56817A;
+}
+
+.summary {
+  margin: 5px 0 5px;
+}
+
+.sublink {
+  font-size: 70%;
+  font-weight: 200;
+  color: dimgray;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Layouts */
+.page {
+  background: white;
+  width: 612px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #56817A;
+  padding: 36px 22px 30px 34px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-column {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  word-wrap: break-word;
+}
+
+.right-column {
+  width: auto;
+  overflow: hidden;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none;
+  }
+
+  .page .resume-header,
+  .page .resume-content {
+    padding: 0 22px 0 34px;
+  }
+
+  .container {
+    page-break-inside: avoid;
+  }
+
+  .work-container .item {
+    page-break-inside: avoid;
+  }
+
+  .fa-external-link {
+    display: none;
+  }
+}
+
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px;
+}
+
+.info-tag-container .fa {
+  font-size: 14px;
+  width: 12px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info-tag-container .fa.fa-map-marker {
+  font-size: 16px;
+}
+
+.info-tag-container .fa.fa-mobile {
+  font-size: 18px;
+}
+
+.info-tag-container .fa.fa-envelope-o {
+  font-size: 12px;
+}
+
+.info-tag-container .fa.fa-desktop {
+  font-size: 11px;
+}
+
+.info-tag-container .fa.fa-external-link {
+  width: auto;
+  font-size: inherit;
+  vertical-align: text-top;
+}
+
+.info-tag-container .info-text {
+  font-size: 12px;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 139px;
+}
+
+.references-container .fa {
+  font-size: 14px;
+}
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-skill {
+  font-size: 80%;
+}
+
+.skill {
+  margin: .15em;
+  padding: .15em;
+  background: ghostwhite;
+  border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header class="resume-header clearfix">
+        <div class="profile-header pull-left">
+            <h1>Sebastian Just</h1>
+            <h2>Director, Software Development &amp; Engineering</h2>
+        </div>
+        <div class="profile-pic pull-right">
+        </div>
+    </header>
+    <div class="resume-content">
+      <aside class="left-column">
+        <div class="container about-container">
+            <div class="title">
+                <h3>About</h3>
+                <div class="keyline"></div>
+            </div>
+                <div class="info-tag-container">
+                    <i class="fa fa-map-marker"></i>
+                
+                        <h6 class="info-text">211 Half-Moon-Bay Dr Croton-on-Hudson New York NY 10520 US</h6>
+                </div>
+        
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-envelope-o"></i>
+                
+                        <h6 class="info-text">
+                            <a href="mailto:mail@sebastian-just.com" target="_blank">
+                                mail@sebastian-just.com
+                            </a>
+                        </h6>
+                </div>
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-mobile"></i>
+                
+                        <h6 class="info-text">
+                            <a href="https://sebastian-just.com" target="_blank">
+                                (347) 266-4396
+                            </a>
+                        </h6>
+                </div>
+        
+        
+                                 <div class="info-tag-container">
+                                     <i class="fa fa-github"></i>
+                                 
+                                         <h6 class="info-text">
+                                             <a href="https://github.com/derjust" target="_blank">
+                                                 derjust
+                                             </a>
+                                         </h6>
+                                 </div>
+        </section>
+            <div class="skills-container">
+                    <section class="container">
+                            <div class="title">
+                                <h3>Web Development</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Master</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">HTML</h6>
+                                    <h6 class="main-skill skill">CSS</h6>
+                                    <h6 class="main-skill skill">JavaScript</h6>
+                            </div>
+                    </section>
+            </div>
+            <div class="container languages-container">
+                <div class="title">
+                    <h3>Languages</h3>
+                    <div class="keyline"></div>
+                </div>
+                <ul class="minimal">
+                        <li>
+                            <h6>English <em>(Native speaker)</em></h6>
+                        </li>
+                        <li>
+                            <h6>German <em>(Mother tongue)</em></h6>
+                        </li>
+                        <li>
+                            <h6>Dutch <em>(Basic)</em></h6>
+                        </li>
+                </ul>
+            </div>
+            <div class="container interests-container">
+                <div class="title">
+                    <h3>Interests</h3>
+                    <div class="keyline"></div>
+                </div>
+                    <section class="item">
+                            <h4 class="bold">Wildlife</h4>
+                            <ul class="minimal">
+                                    <li>Ferrets</li>
+                                    <li>Unicorns</li>
+                            </ul>
+                    </section>
+            </div>
+      </aside>
+      <div class="right-column">
+                <div class="container summary-container">
+                    <div class="title">
+                        <h3>Summary</h3>
+                        <div class="keyline"></div>
+                    </div>            <p class="summary">
+                        Software Engineering Leader and Technology Architect with 10+ years of experience architecting large-scale, resilient systems across international finance, energy, and media enterprises. Deep technical expertise in Java, Scala, and reactive stream architectures, paired with a commitment to test-driven development and robust design principles. Proven leader in guiding cross-functional teams through the complete development lifecycle—from scoping and planning to production delivery and reliable operations.
+                    </p>
+                </div>
+        <div class="container work-container">
+            <div class="title">
+                <h3>Experience</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">05/2019</span>
+                                <span class="endDate"> - Present</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Director Software Development &amp; Engineering</h4>
+        
+        
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">11/2016</span>
+                                <span class="endDate"> - 04/2019</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Process &amp; Solution Architect</h4>
+        
+        
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">06/2014</span>
+                                <span class="endDate"> - 10/2016</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Manager</h4>
+        
+        
+                    <p class="summary">Working on north-star projects using modern and upcoming technologies in the Finance and Media industry as architect, software engineer, technical project lead and mentor.
+        
+        Note: FIS acquired SunGard on November 30, 2015.</p>
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">12/2009</span>
+                                <span class="endDate"> - 05/2014</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Lead Senior Consultant</h4>
+        
+        
+                    <p class="summary">Worked on process automation and service orchestration in the Finance and Energy trading industry all over Europe as software engineer, architect, subproject lead and mentor. Also was leading and responsible for the second level support hotline for SunGard&#x27;s BPM suite &#x27;Infinity Process Platform&#x27; mitigating customer&#x27;s production issues and interfacing with product management.</p>
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">05/2005</span>
+                                <span class="endDate"> - 11/2009</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Software Developer</h4>
+        
+        
+                    <p class="summary">Worked as a software engineer improving and supporting custom developed software for customer finance products.
+        Migrated and improved the customer acquisition application including field service representative planning from Microsoft Access to JSF web application. (Spring, JSF, IceFaces, Tomcat, MSSQL, Hibernate, VBA, Ant)
+        This lowered the license and maintenance cost per agent desktop in the back office by 75% and significantly improved the feature delivery time due to a modernized code base.</p>
+        
+                </section>
+        </div>
+        <div class="container project-container">
+            <div class="title">
+                <h3>Open Source Projects</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Productize implementation and delivery cloud-based insurance model calculation solution
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">02/2018</span>
+                                <span class="endDate"> - Present</span>
+                        </h5>
+                    </div>
+                      <h4>
+                        Derive a productized version of previous solutions and domain knowledge in the market for life insurance risk calculations fulfilling U.S. GAAP &amp; IFRS17 regulatory requirements.
+                    
+                    Product provides standardized workflows for the whole input/calculation/output chain of life insurance risk calculations covering multiple automated tools, human interactions &amp; approvals. Lead developer and architect in a team of 4 people.
+                    
+                    Productized solution based on fully audited, message-driven, polyglottal, Spring-based integration &amp; workflow solution and the Prophet insurance product suite. It allows to perform the input/calculation/output chain with zero human interaction bridging 5+ systems, languages and protocols. Human interaction is focused on review &amp; approval only.
+                      </h4>
+        
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Java</h6>
+                            <h6 class="skill">C#</h6>
+                            <h6 class="skill">Drools</h6>
+                            <h6 class="skill">HTML5</h6>
+                            <h6 class="skill">REST</h6>
+                            <h6 class="skill">SQL</h6>
+                            <h6 class="skill">Tomcat 8.5</h6>
+                            <h6 class="skill">MSSQL 2016</h6>
+                            <h6 class="skill">AWS</h6>
+                            <h6 class="skill">Apache ActiveMQ &amp; NMS</h6>
+                            <h6 class="skill">Maven</h6>
+                            <h6 class="skill">Bitbucket</h6>
+                            <h6 class="skill">Jenkins</h6>
+                    </div>
+        
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://github.com/derjust/spring-data-dynamodb" target="_blank">
+                                    spring-data-dynamodb – AWS DynamoDB connector for Spring
+                                        <span class="sublink">∙ <a href="https://github.com/derjust/spring-data-dynamodb" target="_blank" class="sublink">https://github.com/derjust/spring-data-dynamodb</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">08/2015</span>
+                                <span class="endDate"> - Present</span>
+                        </h5>
+                    </div>
+                      <h4>
+                        Project lead for 4+ years.
+                      </h4>
+        
+        
+        
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Designed, implemented and delivered cloud-based insurance model calculation solution
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">02/2017</span>
+                                <span class="endDate"> - 03/2018</span>
+                        </h5>
+                    </div>
+                      <h4>
+                        Delivered a solution for a fully audited insurance calculation workflow. Integrates with existing workflows and system/file structures at the customer side receiving its input data from and providing the output results back. Lead developer and architect in a team of 6 people.
+                    
+                    Improving business transaction throughput by two magnitudes to 100 per minute allowing the business to answer regulatory and management requirements faster while providing a fully audited workflow based on a message-driven, polyglottal, Spring-based integration &amp; workflow solution and the Prophet insurance product suite.
+                      </h4>
+        
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Java</h6>
+                            <h6 class="skill">C#</h6>
+                            <h6 class="skill">Dozer</h6>
+                            <h6 class="skill">HTML5</h6>
+                            <h6 class="skill">REST</h6>
+                            <h6 class="skill">SQL</h6>
+                            <h6 class="skill">JBoss EAP 6</h6>
+                            <h6 class="skill">MSSQL 2014</h6>
+                            <h6 class="skill">AWS</h6>
+                            <h6 class="skill">Apache ActiveMQ &amp; NMS</h6>
+                            <h6 class="skill">Maven</h6>
+                            <h6 class="skill">Bitbucket</h6>
+                            <h6 class="skill">Jenkins</h6>
+                    </div>
+        
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Designed, implemented and delivered cloud-based insurance model calculation PoC
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">11/2016</span>
+                                <span class="endDate"> - 02/2017</span>
+                        </h5>
+                    </div>
+                      <h4>
+                        Delivered a proof of concept (PoC) solution for a fully audited insurance calculation workflow. PoC integrates with existing workflow tools at the customer side receiving its input data from and providing the output results back from the cloud solution into the customer&#x27;s on-premise infrastructure. Lead developer and architect in a team of 4 people.
+                    
+                    Proving a projected 2/3 decrease in TCO of the whole solution by leveraging AWS cloud services. Showcasing a simplified file protocol between the existing IT landscape and the new cloud-based solution minimizing the impact on infrastructure and security concerns.
+                      </h4>
+        
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Java</h6>
+                            <h6 class="skill">Dozer</h6>
+                            <h6 class="skill">HTML5</h6>
+                            <h6 class="skill">Prophet insurance product suite</h6>
+                            <h6 class="skill">Towers Watson Unify</h6>
+                            <h6 class="skill">JBoss EAP 6</h6>
+                            <h6 class="skill">MSSQL 2014</h6>
+                            <h6 class="skill">AWS</h6>
+                    </div>
+        
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Designed, implemented, tested and delivered video asset downloader for iOS clients
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">03/2016</span>
+                                <span class="endDate"> - 10/2016</span>
+                        </h5>
+                    </div>
+                      <h4>
+                        Lead developer and architect in a team of 4 people to significantly improve the user experience of downloading video assets to user&#x27;s mobile device.
+                    
+                    Responsible for technical direction, backend development, unit testing with comprehensive test coverage and deployment of a ZIP HTTP REST download that reduces the download time of video assets from 40 minutes to under 3 minutes (2h movie) including seamless HTTP resume.
+                      </h4>
+        
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Scala</h6>
+                            <h6 class="skill">Spray</h6>
+                            <h6 class="skill">Akka-Streams</h6>
+                            <h6 class="skill">Akka-HTTP</h6>
+                            <h6 class="skill">Java</h6>
+                            <h6 class="skill">open-m3u8</h6>
+                            <h6 class="skill">Memcached</h6>
+                            <h6 class="skill">OpenStack</h6>
+                            <h6 class="skill">Consul</h6>
+                            <h6 class="skill">Docker</h6>
+                            <h6 class="skill">Akamai GTM</h6>
+                            <h6 class="skill">Terraform</h6>
+                            <h6 class="skill">Ansible</h6>
+                            <h6 class="skill">Pagerduty</h6>
+                            <h6 class="skill">sbt</h6>
+                            <h6 class="skill">Concourse</h6>
+                            <h6 class="skill">Github Enterprise</h6>
+                            <h6 class="skill">Cobertura</h6>
+                            <h6 class="skill">jVisualVM</h6>
+                            <h6 class="skill">JMH</h6>
+                    </div>
+        
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://github.com/derjust/open-m3u8" target="_blank">
+                                    Open M3U8
+                                        <span class="sublink">∙ <a href="https://github.com/derjust/open-m3u8" target="_blank" class="sublink">https://github.com/derjust/open-m3u8</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">10/2014</span>
+                                <span class="endDate"> - 09/2016</span>
+                        </h5>
+                    </div>
+                      <h4>
+                        Open M3U8 is an MIT licensed m3u8 playlist parser and writer library written in java.
+                      </h4>
+        
+        
+        
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://youtu.be/fqOpaCS117Q?t&#x3D;39m55s" target="_blank">
+                                    Planned, implemented and load tested a prototype based on Google Cloud
+                                        <span class="sublink">∙ <a href="https://youtu.be/fqOpaCS117Q?t&#x3D;39m55s" target="_blank" class="sublink">https://youtu.be/fqOpaCS117Q?t&#x3D;39m55s</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">12/2015</span>
+                                <span class="endDate"> - 03/2016</span>
+                        </h5>
+                    </div>
+                      <h4>
+                        Lead developer and architect in a team of 4 people for a prototype which is able to durably ingest, validate and link 25 billion market events in under 1 hour on the Google Cloud Platform to fulfill SEC&#x27;s SLA requirements.
+                    
+                    Responsible for technical and functional direction, development, unit and performance testing with comprehensive test coverage and deployment of the solution on GCP. Results were presented on GCP Next 16 - https://youtu.be/fqOpaCS117Q?t&#x3D;39m55s - and summarized in the whitepaper &#x27;Market Reconstruction 2.0&#x27;.
+                      </h4>
+        
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Google Bigtable</h6>
+                            <h6 class="skill">Google Dataflow</h6>
+                            <h6 class="skill">Google BigQuery</h6>
+                            <h6 class="skill">Apache HBase</h6>
+                            <h6 class="skill">Apache Hadoop</h6>
+                            <h6 class="skill">Google Cloud Computing</h6>
+                            <h6 class="skill">Google Cloud CLI</h6>
+                            <h6 class="skill">Google OAuth</h6>
+                            <h6 class="skill">Java</h6>
+                            <h6 class="skill">TransFIX</h6>
+                            <h6 class="skill">JMH</h6>
+                            <h6 class="skill">Maven</h6>
+                            <h6 class="skill">Git</h6>
+                            <h6 class="skill">Bash</h6>
+                    </div>
+        
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Implemented and delivered a treasury system for all worldwide subsidiaries
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">08/2014</span>
+                                <span class="endDate"> - 03/2015</span>
+                        </h5>
+                    </div>
+                      <h4>
+                        Lead developer in a team of 5 people for a tailored solution for the customer&#x27;s treasury and cash flow requirements.
+                    
+                    Responsible for technical direction, front- and backend development, unit testing and deployment of the solution providing performant access for 1,500 accountants of their world-wide subsidiaries including a corporate treasury division with up to 100 concurrent users.
+                      </h4>
+        
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Node.js (Express, edge/C#, passport, i18n, superagent, multi file upload)</h6>
+                            <h6 class="skill">HTML5</h6>
+                            <h6 class="skill">Twitter Bootstrap</h6>
+                            <h6 class="skill">AngularJS</h6>
+                            <h6 class="skill">CSS3</h6>
+                            <h6 class="skill">Apache jMeter</h6>
+                            <h6 class="skill">Microsoft IIS 7</h6>
+                            <h6 class="skill">Sharepoint 2010</h6>
+                            <h6 class="skill">Microsoft SQL Server 2012</h6>
+                            <h6 class="skill">Grunt</h6>
+                    </div>
+        
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Planning major workflow processes and service orchestration system migration
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">01/2014</span>
+                                <span class="endDate"> - 06/2014</span>
+                        </h5>
+                    </div>
+                      <h4>
+                        Developed a board-approved migration path to transit the existing solution to a modern, flexible, message oriented architecture while keeping all business processes and data consistent for minimized business impact.
+                    
+                    Solution architect and project manager in a team of 4 people. Responsible for target architecture, elaboration of technologies and review of the existing implementations. Developed and reviewed proof of concept for different integrations including effort estimation and migration.
+                    
+                    Binary protocols between systems were replaced by message based, platform independent protocols allowing integration of new modules via a simplified translation layer within days compared to months of effort to integrate.
+                      </h4>
+        
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Java (Spring, JPA, JAX-WS, XML/XSLT, JaxB, Reflection)</h6>
+                            <h6 class="skill">Maven</h6>
+                            <h6 class="skill">HTML5</h6>
+                            <h6 class="skill">JSP/Servlets</h6>
+                            <h6 class="skill">JSF</h6>
+                            <h6 class="skill">Apache MyFaces</h6>
+                            <h6 class="skill">Apache Trinidad</h6>
+                            <h6 class="skill">Infinity Process Platform/Eclipse Stardust</h6>
+                            <h6 class="skill">Apache Camel</h6>
+                            <h6 class="skill">Hazelcast</h6>
+                            <h6 class="skill">Oracle Database 12g</h6>
+                            <h6 class="skill">JBoss EAP 6.2</h6>
+                            <h6 class="skill">HornetQ Broker</h6>
+                            <h6 class="skill">Apache ActiveMQ Broker</h6>
+                    </div>
+        
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Planned, implemented and delivered Sales Portal for Energy Trading
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">06/2013</span>
+                                <span class="endDate"> - 02/2014</span>
+                        </h5>
+                    </div>
+                      <h4>
+                        Lead software engineer and architect in a team of five people for a web application for deal capture by sales department, based on standardized deal characteristics and automated pricing algorithm.
+                    
+                    Responsible for further elaboration of the specification, leading technology decisions and architecture, implementation, code review, and deployment providing a streamlined sales process for the front office decreasing the offer creation by 50%.
+                      </h4>
+        
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Spring</h6>
+                            <h6 class="skill">JSF</h6>
+                            <h6 class="skill">JMS</h6>
+                            <h6 class="skill">JBoss</h6>
+                            <h6 class="skill">JCA</h6>
+                            <h6 class="skill">ActiveMQ</h6>
+                            <h6 class="skill">Maven</h6>
+                    </div>
+        
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Implemented and delivered Energy back office trading integration with SAP
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">01/2013</span>
+                                <span class="endDate"> - 08/2013</span>
+                        </h5>
+                    </div>
+                      <h4>
+                        Lead software engineer and architect in a team of two people for a CSV file based bi-directional interface between SunGard Aligne GBO and SAP.
+                    
+                    Responsible for requirements engineering, architecture implementation and delivery of the integration module.
+                      </h4>
+        
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Spring</h6>
+                            <h6 class="skill">JAX-*</h6>
+                            <h6 class="skill">Tomcat</h6>
+                            <h6 class="skill">JaxB</h6>
+                            <h6 class="skill">Tipco</h6>
+                            <h6 class="skill">SAP</h6>
+                            <h6 class="skill">Maven</h6>
+                    </div>
+        
+        
+                </section>
+        </div>
+        <div class="container education-container">
+            <div class="title">
+            <h3>Education</h3>
+            <div class="keyline"></div>
+        </div> 
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    Drexel University
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">06/2021</span>
+                    <span class="endDate"> - 06/2024</span>
+            </h5>
+        </div>
+         
+                <h4>Master of Science Software Engineering</h4>
+        
+              </section>
+        
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    HBX | Harvard Business School
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">01/2017</span>
+                    <span class="endDate"> - 01/2017</span>
+            </h5>
+        </div>
+         
+                <h4>Certificate Leading with Finance</h4>
+        
+              </section>
+        
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    Leibniz Akademie Hannover
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">09/2005</span>
+                    <span class="endDate"> - 03/2009</span>
+            </h5>
+        </div>
+         
+                <h4>Bachelor of Science Business Computer Science</h4>
+        
+              </section>
+        </div>
+        <div class="container awards-container">
+            <div class="title">
+                <h3>Awards</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Award
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+        
+                    <h5 class="awarder">Company</h5>
+        
+                    <p class="summary">There is no spoon.</p>
+                </section>
+        </div>
+        <div class="container publications-container">
+            <div class="title">
+                <h3>Publications</h3>
+                <div class="keyline"></div>
+            </div>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            Market Reconstruction 2.0: A Financial Services Application of Google Cloud Bigtable and Google Cloud Dataflow
+                    </h3>
+                    <h5 class="italic pull-right">
+                            08/2016
+                            </h5>
+                </div>
+        
+                <h5 class="awarder">FIS Advanced Technology</h5>
+        
+                <p class="summary">The FIS Market Reconstruction Platform (MRP) is a market surveillance and forensics utility designed for the daily ingestion, linkage and analytics of U.S. equity and equity options market events over multi-year periods. In May of 2015, FIS’ Advanced Technology group (formerly SunGard) released a white paper detailing its experiences using Google Cloud Bigtable in prototyping the MRP.</p>
+        
+            </section>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            Transforming options market data with the Dataflow SDK
+                    </h3>
+                    <h5 class="italic pull-right">
+                            12/2017
+                            </h5>
+                </div>
+        
+                <h5 class="awarder">FIS Advanced Technology (formerly SunGard)</h5>
+        
+                <p class="summary">Much of the software development in the capital markets revolves around the transformation and enrichment of data arriving from another system. Traditionally, developers have considered the activities around Extracting, Transforming and Loading (ETL) data a particularly unglamorous dimension of building software products. However, when data-driven enterprises are tasked with harvesting insights from massive data sets, it is quite likely that ETL, in one form or another, is lurking nearby.</p>
+        
+            </section>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            Scaling to Build the Consolidated Audit Trail
+                    </h3>
+                    <h5 class="italic pull-right">
+                            05/2015
+                            </h5>
+                </div>
+        
+                <h5 class="awarder">SunGard Data Systems, Inc</h5>
+        
+                <p class="summary">Google Cloud Bigtable is a fully managed, high-performance, extremely scalable NoSQL database service offered through the industry-standard, open-source Apache HBase API, powered by Bigtable. The Consolidated Audit Trail (CAT) is a massive, government-mandated database that will track every equities and options market event in the US financial industry over a six-year period. We consider Google Cloud Bigtable in the context of CAT, and perform a series of experiments measuring the speed and scalability of Cloud Bigtable. We find that Google Cloud Bigtable scales well and will be able to meet the requirements of CAT. Additionally, we discuss how Google Cloud Bigtable fits into the larger full technology stack of the CAT platform.</p>
+        
+            </section>
+        </div>
+        <div class="container references-container">
+            <div class="title">
+                <h3>References</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        Sebastian is a hugely talented developer with a great ability to deliver large amounts of work on time and of extremely high quality. He was fantastic on both direct client projects and our internal R&amp;D, including a key role building out the prototype for the Consolidated Audit Trail on Google Cloud Platform that was demonstrated at Google Next in 2016. He&#x27;s an asset to any team, a pleasure to work with and I hope to work with him again in the future. — Neil Palmer, Global Cloud Practice Lead at Egen (January 31, 2017, Neil managed Sebastian directly)
+                    </blockquote>
+        
+                    <h5 class="pull-right"> — Neil Palmer</h5>
+                </section>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        When Sebastian first arrived as an engineering resource for a worldwide enterprise portal project that was over-scoped, understaffed and late, he was already an accomplished Java developer. Given the circumstances, we gleefully ignored that the project was entirely written in Node.js, acted casual and simply hoped for a de minimus velocity tax. Without even a speed bump, our delivery rate escalated and the project, to great relief, was delivered successfully. Sebastian&#x27;s contributions were paramount, and he was able take his fundamentals, apply them to a solution space that was new to him, and ultimately give the project the boost it needed through the finish line.
+        
+        Fast forward several years and Sebastian had scaled up his contributions and technical leadership, becoming a mentor to many team members and spearheading the engineering work for both exotic internal pursuits and large, custom application development projects. Along the way, he&#x27;s helped the bigger picture through co-authoring several FinTech technical white papers, as well as contributing to various OSS projects and acting as a product engineering liaison in strategic vendor relationships, kicking the tires on some products that are exhibiting considerable impact today.
+        
+        Sebastian&#x27;s ability to think strategically and arrive at pragmatic solutions reinforces his technical background and helps his teams ship reliably. The combination means that the product is able to do so without the technical debt accumulation that progressively decays quality. His strong sense of &quot;right&quot; in terms of software and systems architectures and alignment with the project&#x27;s objectives make Sebastian a particularly excellent navigator of the complex tradeoff matrices faced by many ambitious efforts.
+        
+        Aside from his technical and business competencies, he&#x27;s also just a great teammate - and firmly on the short-list of engineers I&#x27;d work with again in a heartbeat. — Salvatore Sferrazza, Hi-Tech Polymath (January 24, 2017, Salvatore was senior to Sebastian but didn&#x27;t manage Sebastian directly)
+                    </blockquote>
+        
+                    <h5 class="pull-right"> — Salvatore Sferrazza</h5>
+                </section>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
